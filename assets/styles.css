@@ -46,7 +46,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* width: 70%; */
+	width: 70%;
 	margin-top: 30px;
 }
 .movie {
@@ -56,6 +56,9 @@ body {
 	width: 100%;
 }
 .movie .images img {
-	width: inherit;
-	width: 100px;
+	height: 50px;
+}
+#spanbold {
+	font-weight: bold;
+	font-size: 15px;
 }
