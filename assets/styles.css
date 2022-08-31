@@ -46,11 +46,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 70%;
+	/* width: 70%; */
 	margin-top: 30px;
 }
 .movie {
-	width: 20%;
+	width: 18%;
 }
 .movie .images {
 	width: 100%;
