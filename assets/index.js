@@ -40,7 +40,7 @@ function hideResetForm() {
 		// console.log("I was clicked");
 
 		e.preventDefault();
-		commentscont.className = " ";
+		// commentscont.className = " ";
 		displaycomment = document.getElementById("displaycomments");
 		let li = document.createElement("li");
 		li.textContent = document.getElementById("commentinput").value;
