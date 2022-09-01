@@ -35,11 +35,11 @@ function showCommentsForm() {
 function hideResetForm() {
 	let postbtn = document.getElementById("postbtn");
 	let form = document.getElementById("form");
-	postbtn.addEventListener("click", () => {
-		alert("i was clicked");
-		console.log("I was clicked");
-		comments.className = "hidden";
+	form.addEventListener("submit", () => {
+		// alert("i was clicked");
+		// console.log("I was clicked");
 		form.reset();
+		comments.className = "hidden";
 	});
 }
 
@@ -52,4 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	releaseDate2 = document.getElementById("release");
 	showCommentsForm();
 	getMovieData();
+	hideResetForm();
 });
