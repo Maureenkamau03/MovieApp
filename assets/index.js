@@ -42,9 +42,7 @@ function hideResetForm() {
 		e.preventDefault();
 		commentscont.className = " ";
 		displaycomment = document.getElementById("displaycomments");
-
 		let li = document.createElement("li");
-
 		li.textContent = document.getElementById("commentinput").value;
 		document.getElementById("commentsgohere").appendChild(li);
 		console.log(li);
@@ -60,7 +58,6 @@ function likes() {
 		event.target.style.color = "red";
 		const noOfLikes = document.getElementById("likescount");
 		let likes = 0;
-
 		likes += 1;
 		noOfLikes.textContent = `${likes} likes`;
 	});
@@ -69,9 +66,6 @@ function likes() {
 document.addEventListener("DOMContentLoaded", () => {
 	const comments = document.getElementById("comments");
 	comments.className = "hidden";
-	commentscont = document.getElementsByClassName("commentscont");
-	commentscont.className = "hidden";
-
 	desc2 = document.getElementById("overview2");
 	image2 = document.getElementById("img2");
 	title2 = document.getElementById("title2");
