@@ -48,6 +48,11 @@ function likes() {
 
 	unliked.addEventListener("click", (event) => {
 		event.target.style.color = "red";
+		const noOfLikes = document.getElementById("likescount");
+		let likes = 0;
+
+		likes += 1;
+		noOfLikes.textContent = `${likes} likes`;
 	});
 }
 

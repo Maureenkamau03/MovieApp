@@ -85,19 +85,17 @@ body {
 .hidden {
 	visibility: hidden;
 }
-/* .liked span {
-	color: red;
-} */
-/* 
-.material-symbols-rounded #liked {
-	font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-	fill-rule: red;
-} */
+
 .likeandcomment {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-top: 15px;
 }
 #like {
 	color: red;
+}
+.likes {
+	display: flex;
+	align-items: center;
 }
