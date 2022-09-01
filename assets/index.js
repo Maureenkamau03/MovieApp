@@ -26,11 +26,30 @@ function getMovieData() {
 		})
 		.catch((error) => console.log(error));
 }
+function showCommentsForm() {
+	let commentbtn = document.getElementById("commenticon");
+	commentbtn.addEventListener("click", () => {
+		comments.className = " ";
+	});
+}
+function hideResetForm() {
+	let postbtn = document.getElementById("postbtn");
+	let form = document.getElementById("form");
+	postbtn.addEventListener("click", () => {
+		alert("i was clicked");
+		console.log("I was clicked");
+		comments.className = "hidden";
+		form.reset();
+	});
+}
 
 document.addEventListener("DOMContentLoaded", () => {
+	const comments = document.getElementById("comments");
+	comments.className = "hidden";
 	desc2 = document.getElementById("overview2");
 	image2 = document.getElementById("img2");
 	title2 = document.getElementById("title2");
 	releaseDate2 = document.getElementById("release");
+	showCommentsForm();
 	getMovieData();
 });

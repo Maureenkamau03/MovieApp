@@ -82,3 +82,6 @@ body {
 .title {
 	color: red;
 }
+.hidden {
+	visibility: hidden;
+}
