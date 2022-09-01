@@ -2,6 +2,14 @@ function getMovieData() {
 	fetch(
 		"https://api.themoviedb.org/3/trending/all/day?api_key=8f43c803b81758d533bcf81698d83833"
 	)
+		.then((res) => {
+			if (res.ok) {
+				console.log("request successful");
+			} else {
+				console.log("request usuccessful!!!");
+			}
+			return res;
+		})
 		.then((res) => res.json())
 		.then((data) => {
 			// console.log(data);
@@ -15,7 +23,8 @@ function getMovieData() {
 				// console.log(data.results[2].release_date);
 			}
 			displayMovieData();
-		});
+		})
+		.catch((error) => console.log(error));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
