@@ -148,3 +148,6 @@ button:hover {
 	border-radius: 5px;
 	padding: 10px;
 }
+button #delete:hover {
+	padding: 0px;
+}

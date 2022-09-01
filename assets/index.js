@@ -66,10 +66,20 @@ function addMovieToWatchlist() {
 	watchListForm.addEventListener("submit", (e) => {
 		e.preventDefault();
 		let list = document.createElement("li");
+		let btn = document.createElement("button");
+		btn.setAttribute("id", "delete");
+		btn.addEventListener("click", deleteitem);
+		btn.textContent = " x ";
+
+		// console.log(list);
 		list.textContent = document.getElementById("mylistinput").value;
 		document.getElementById("watchlistitems").appendChild(list);
+		list.appendChild(btn);
 		watchListForm.reset();
 	});
+}
+function deleteitem(e) {
+	e.target.parentNode.remove();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
