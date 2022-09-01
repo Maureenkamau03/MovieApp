@@ -41,7 +41,6 @@ function hideResetForm() {
 
 		e.preventDefault();
 		// commentscont.className = " ";
-		displaycomment = document.getElementById("displaycomments");
 		let li = document.createElement("li");
 		li.textContent = document.getElementById("commentinput").value;
 		document.getElementById("commentsgohere").appendChild(li);
@@ -62,6 +61,16 @@ function likes() {
 		noOfLikes.textContent = `${likes} likes`;
 	});
 }
+function addMovieToWatchlist() {
+	let watchListForm = document.getElementById("mylistform");
+	watchListForm.addEventListener("submit", (e) => {
+		e.preventDefault();
+		let list = document.createElement("li");
+		list.textContent = document.getElementById("mylistinput").value;
+		document.getElementById("watchlistitems").appendChild(list);
+		watchListForm.reset();
+	});
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 	const comments = document.getElementById("comments");
@@ -76,4 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	showCommentsForm();
 	getMovieData();
 	hideResetForm();
+	addMovieToWatchlist();
 });

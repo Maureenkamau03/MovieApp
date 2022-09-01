@@ -136,3 +136,6 @@ input:focus {
 .watchlist {
 	padding-bottom: 200px;
 }
+.listh2 span {
+	color: red;
+}
