@@ -82,6 +82,9 @@ body {
 	padding-top: 20px;
 	text-align: center;
 }
+.most-populartext h2 {
+	color: red;
+}
 .desc {
 	font-size: 15px;
 }
@@ -123,12 +126,12 @@ input {
 input:focus {
 	outline: none;
 }
-#postbtn {
+button {
 	border: none;
 	border-radius: 5px;
 	padding: 5px;
 }
-#postbtn:hover {
+button:hover {
 	background-color: red;
 	color: white;
 	font-size: 20px;
@@ -138,4 +141,10 @@ input:focus {
 }
 .listh2 span {
 	color: red;
+}
+.list {
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	padding: 10px;
 }

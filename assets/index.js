@@ -75,6 +75,8 @@ function addMovieToWatchlist() {
 document.addEventListener("DOMContentLoaded", () => {
 	const comments = document.getElementById("comments");
 	comments.className = "hidden";
+	// const list = document.getElementById("list");
+	// list.className = "hidden";
 	desc2 = document.getElementById("overview2");
 	image2 = document.getElementById("img2");
 	title2 = document.getElementById("title2");
