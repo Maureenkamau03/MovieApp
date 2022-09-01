@@ -133,3 +133,6 @@ input:focus {
 	color: white;
 	font-size: 20px;
 }
+.watchlist {
+	padding-bottom: 200px;
+}
