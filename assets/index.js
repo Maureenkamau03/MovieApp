@@ -33,7 +33,7 @@ function showCommentsForm() {
 	});
 }
 function hideResetForm() {
-	let postbtn = document.getElementById("postbtn");
+	// let postbtn = document.getElementById("postbtn");
 	let form = document.getElementById("form");
 	form.addEventListener("submit", () => {
 		// alert("i was clicked");
@@ -42,14 +42,24 @@ function hideResetForm() {
 		comments.className = "hidden";
 	});
 }
+function likes() {
+	let unliked = document.getElementById("unliked");
+	// let like = document.getElementById("like");
+
+	unliked.addEventListener("click", (event) => {
+		event.target.style.color = "red";
+	});
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 	const comments = document.getElementById("comments");
 	comments.className = "hidden";
+
 	desc2 = document.getElementById("overview2");
 	image2 = document.getElementById("img2");
 	title2 = document.getElementById("title2");
 	releaseDate2 = document.getElementById("release");
+	likes();
 	showCommentsForm();
 	getMovieData();
 	hideResetForm();

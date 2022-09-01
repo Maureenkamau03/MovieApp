@@ -24,6 +24,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
 		<title>Movie APP</title>
 	</head>
 	<body>
@@ -79,10 +81,14 @@
 						<span id="release"></span>
 						<p class="desc" id="overview2"></p>
 						<div class="likeandcomment">
-            </div><span class="material-symbols-rounded"> favorite </span>
+            <!-- <span class="material-symbols-rounded" id="like"> favorite </span> -->
+						<!-- <i class="fa-solid fa-heart" id="likedheart"></i> -->
+						<span class="material-symbols-rounded" id="unliked">
+							favorite
+							</span>
             <span class="material-symbols-rounded" id="commenticon">
               comment
-              </span>
+              </span></div>
 							<div class="commentsform" id="comments">
 								<form action="#" id="form">
 									<input type="text" name="" id="commentinput" placeholder="Add a comment">
