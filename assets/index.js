@@ -35,9 +35,17 @@ function showCommentsForm() {
 function hideResetForm() {
 	// let postbtn = document.getElementById("postbtn");
 	let form = document.getElementById("form");
-	form.addEventListener("submit", () => {
+	form.addEventListener("submit", (e) => {
 		// alert("i was clicked");
 		// console.log("I was clicked");
+		e.preventDefault();
+		displaycomment = document.getElementById("displaycomments");
+
+		let li = document.createElement("li");
+
+		li.textContent = document.getElementById("commentinput").value;
+		document.getElementById("commentsgohere").appendChild(li);
+		console.log(li);
 		form.reset();
 		comments.className = "hidden";
 	});
