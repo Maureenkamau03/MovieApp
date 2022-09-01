@@ -70,6 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	image2 = document.getElementById("img2");
 	title2 = document.getElementById("title2");
 	releaseDate2 = document.getElementById("release");
+	title1 = document.getElementById("title1");
+
 	likes();
 	showCommentsForm();
 	getMovieData();
