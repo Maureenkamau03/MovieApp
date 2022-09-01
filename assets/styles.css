@@ -1,13 +1,13 @@
 * {
 	padding: 0;
-	margin: o;
+	margin: 0;
 }
 body {
 	font-family: poppins;
 }
 .herocont {
 	position: relative;
-	background-color: rgb(238, 122, 122);
+	background-color: rgb(29, 28, 28);
 	height: 50vh;
 	/* background-image: url("./images/image1.png"); */
 	object-fit: cover;
@@ -42,23 +42,43 @@ body {
 .herotext span {
 	color: red;
 }
-.moviescont {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 70%;
-	margin-top: 30px;
-}
-.movie {
-	width: 18%;
-}
-.movie .images {
-	width: 100%;
-}
-.movie .images img {
-	height: 50px;
-}
+
 #spanbold {
 	font-weight: bold;
 	font-size: 15px;
+}
+/* checkout */
+.popular-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+.items {
+	width: 20%;
+}
+
+#bold {
+	font-weight: bold;
+}
+.images {
+	width: 100%;
+}
+.items .images img {
+	width: 100%;
+}
+.most-popular {
+	background-color: rgb(29, 28, 28);
+	color: white;
+	/* padding-left: 30px; */
+}
+.most-populartext {
+	padding-top: 20px;
+}
+.desc {
+	font-size: 15px;
+}
+.title {
+	color: red;
 }

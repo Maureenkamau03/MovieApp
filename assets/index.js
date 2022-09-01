@@ -4,15 +4,15 @@ function getMovieData() {
 	)
 		.then((res) => res.json())
 		.then((data) => {
-			// console.log(data)
+			// console.log(data);
 			function displayMovieData() {
-				image2.scr = data.results[2].backdrop_path;
+				image2.scr = data.results[2].poster_path;
 				desc2.innerText = data.results[2].overview;
 				// console.log(data.results[1].overview);
 				title2.innerText = data.results[2].title;
 				// console.log(data.results[2].title);
-				releaseDate2.innerText = data.results[2].first_air_date;
-				console.log(data.results[2].vote_count);
+				releaseDate2.innerText = data.results[2].release_date;
+				// console.log(data.results[2].release_date);
 			}
 			displayMovieData();
 		});
