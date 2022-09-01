@@ -38,7 +38,9 @@ function hideResetForm() {
 	form.addEventListener("submit", (e) => {
 		// alert("i was clicked");
 		// console.log("I was clicked");
+
 		e.preventDefault();
+		commentscont.className = " ";
 		displaycomment = document.getElementById("displaycomments");
 
 		let li = document.createElement("li");
@@ -67,6 +69,8 @@ function likes() {
 document.addEventListener("DOMContentLoaded", () => {
 	const comments = document.getElementById("comments");
 	comments.className = "hidden";
+	commentscont = document.getElementsByClassName("commentscont");
+	commentscont.className = "hidden";
 
 	desc2 = document.getElementById("overview2");
 	image2 = document.getElementById("img2");
