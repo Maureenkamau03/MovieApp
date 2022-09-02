@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 body {
 	font-family: poppins;
@@ -107,6 +108,7 @@ body {
 .likes {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 ul {
 	list-style: none;
@@ -117,11 +119,15 @@ ul {
 	border-radius: 10px;
 	padding: 10px;
 }
+#commenticon {
+	cursor: pointer;
+}
 input {
 	border: none;
 	border-radius: 5px;
 	padding: 5px;
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 input:focus {
 	outline: none;
@@ -130,11 +136,13 @@ button {
 	border: none;
 	border-radius: 5px;
 	padding: 5px;
+	cursor: pointer;
 }
 button:hover {
 	background-color: red;
 	color: white;
 	font-size: 20px;
+	cursor: pointer;
 }
 .watchlist {
 	padding-bottom: 200px;
