@@ -8,18 +8,18 @@ function getMovieData() {
 			} else {
 				console.log("request usuccessful!!!");
 			}
-			return res;
+			return res.json();
 		})
-		.then((res) => res.json())
+		// .then((res) => res.json())
 		.then((data) => {
 			// console.log(data);
 			function displayMovieData() {
-				image2.scr = data.results[2].poster_path;
-				desc2.innerText = data.results[2].overview;
+				image2.scr = data.results[3].poster_path;
+				desc2.innerText = data.results[3].overview;
 				// console.log(data.results[1].overview);
-				title2.innerText = data.results[2].title;
+				title2.innerText = data.results[3].title;
 				// console.log(data.results[2].title);
-				releaseDate2.innerText = data.results[2].release_date;
+				releaseDate2.innerText = data.results[3].release_date;
 				// console.log(data.results[2].release_date);
 			}
 			displayMovieData();
