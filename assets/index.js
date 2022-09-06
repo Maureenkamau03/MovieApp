@@ -14,13 +14,15 @@ function getMovieData() {
 		.then((data) => {
 			// console.log(data);
 			function displayMovieData() {
-				image2.scr = data.results[3].poster_path;
-				desc2.innerText = data.results[3].overview;
+				// image2.scr = data.results["poster_path"];
+				image2.scr = data.results[0].poster_path;
+
+				desc2.innerText = data.results[0].overview;
 				// console.log(data.results[1].overview);
-				title2.innerText = data.results[3].title;
+				title2.innerText = data.results[0].name;
 				// console.log(data.results[2].title);
-				releaseDate2.innerText = data.results[3].release_date;
-				// console.log(data.results[2].release_date);
+				releaseDate2.innerText = data.results[0].first_air_date;
+				// console.log(data.results[2].first_air_date;
 			}
 			displayMovieData();
 		})
@@ -32,6 +34,8 @@ function showCommentsForm() {
 		comments.className = " ";
 	});
 }
+
+// function to hide and reset comments form
 function hideResetForm() {
 	// let postbtn = document.getElementById("postbtn");
 	let form = document.getElementById("form");
@@ -49,18 +53,30 @@ function hideResetForm() {
 		comments.className = "hidden";
 	});
 }
+
+// function for liking
 function likes() {
 	let unliked = document.getElementById("unliked");
 	// let like = document.getElementById("like");
 
 	unliked.addEventListener("click", (event) => {
 		event.target.style.color = "red";
+		// event.target.className = "liked";
 		const noOfLikes = document.getElementById("likescount");
 		let likes = 0;
 		likes += 1;
 		noOfLikes.textContent = `${likes} likes`;
 	});
+	// unliked.addEventListener("click", (event) => {
+	// 	event.target.style.color = "white";
+	// 	const noOfLikes = document.getElementById("likescount");
+	// 	// let likes = 0;
+	// 	likes -= 1;
+	// 	noOfLikes.textContent = `${likes} likes`;
+	// });
 }
+
+//function to add a watchlist
 function addMovieToWatchlist() {
 	let watchListForm = document.getElementById("mylistform");
 	watchListForm.addEventListener("submit", (e) => {

@@ -110,6 +110,9 @@ body {
 	align-items: center;
 	cursor: pointer;
 }
+.liked {
+	fill-rule: red;
+}
 ul {
 	list-style: none;
 }
