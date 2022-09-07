@@ -110,7 +110,7 @@ body {
 	align-items: center;
 	cursor: pointer;
 }
-.liked {
+.unliked {
 	fill-rule: red;
 }
 ul {

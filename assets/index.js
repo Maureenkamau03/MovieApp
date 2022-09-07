@@ -67,13 +67,6 @@ function likes() {
 		likes += 1;
 		noOfLikes.textContent = `${likes} likes`;
 	});
-	// unliked.addEventListener("click", (event) => {
-	// 	event.target.style.color = "white";
-	// 	const noOfLikes = document.getElementById("likescount");
-	// 	// let likes = 0;
-	// 	likes -= 1;
-	// 	noOfLikes.textContent = `${likes} likes`;
-	// });
 }
 
 //function to add a watchlist

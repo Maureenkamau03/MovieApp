@@ -5,7 +5,7 @@
 ## Table of contents
 
 - [Description](#description)
-- [Installation Requirement](#Installation)
+- [Installation Requirements](#Installation)
 - [Technology Used](#Technology-used)
 - [Reference](#Reference)
 - [License](#License)
@@ -13,7 +13,7 @@
 
 ## Description
 
-This is a landing page for MovieApp. Movie app fetches data from TMDB API. With this Movie app is able to display information about the trending movie. Here the user cana like the movie and comment on it. MovieApp also provides a section where the user can add a list of movies they'd like to watch later. The user can also delete a movie added to this list.
+This is a landing page for MovieApp. MovieApp fetches data from TMDB API. With this, MovieApp is able to display information about the trending movie. Here the user can like the movie and comment on it. MovieApp also provides a section where the user can add a list of movies they'd like to watch later. The user can also delete a movie added to this list.
 
 ![myimage-alt-tag](./assets/images/Screenshot%20from%202022-09-02%2015-30-07.png)
 
@@ -21,12 +21,15 @@ This is a landing page for MovieApp. Movie app fetches data from TMDB API. With 
 
 ### Requirements
 
--Either a computer, Ipad, tablet or phone
--An access to internet connection
+- Either a computer, Ipad, tablet or phone
+- An access to internet connection
+- Text editor
 
 ### Installation process
 
-[Go back to the top](#MovieApp)
+- $ git clone https://github.com/Maureenkamau03/MovieApp
+- $ cd MovieApp
+- $ google-chrome index.html
 
 ## Live link
 
@@ -69,4 +72,5 @@ SOFTWARE.
 
 ## Author's Infor
 
-LinkedIn- https://www.linkedin.com/in/maureen-kamau-ba6470212
+- LinkedIn - https://www.linkedin.com/in/maureen-kamau-ba6470212
+- Email - maureen.kamau01@student.moringaschool.com
