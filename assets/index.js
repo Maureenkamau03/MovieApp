@@ -19,9 +19,9 @@ function getMovieData() {
 
 				desc2.innerText = data.results[0].overview;
 				// console.log(data.results[1].overview);
-				title2.innerText = data.results[0].name;
+				title2.innerText = data.results[0].title;
 				// console.log(data.results[2].title);
-				releaseDate2.innerText = data.results[0].first_air_date;
+				releaseDate2.innerText = data.results[0].release_date;
 				// console.log(data.results[2].first_air_date;
 			}
 			displayMovieData();
